@@ -1,10 +1,3 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -112,36 +105,24 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Jake Ryan} \\ \vspace{1pt}
-    \small 123-456-7890 $|$ \href{mailto:x@x.com}{\underline{jake@su.edu}} $|$ 
-    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
-    \href{https://github.com/...}{\underline{github.com/jake}}
+    \textbf{\Huge \scshape Abraham Vargas} \\ \vspace{1pt}
+    \small 813-358-3092 $|$ \href{mailto:abevargas1@outlook.com}{\underline{abevargas1@outlook.com}} $|$ 
+    \href{https://linkedin.com/in/abevargas1}{\underline{linkedin.com/in/abevargas1}}
 \end{center}
 
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Southwestern University}{Georgetown, TX}
-      {Bachelor of Arts in Computer Science, Minor in Business}{Aug. 2018 -- May 2021}
-    \resumeSubheading
-      {Blinn College}{Bryan, TX}
-      {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
-  \resumeSubHeadingListEnd
-
-
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Professional Overview}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Undergraduate Research Assistant}{June 2020 -- Present}
-      {Texas A\&M University}{College Station, TX}
+      {Senior Data Engineer, USSOCOM CDAO}{March 2020 -- Present}
+      {Iron EagleX, Inc.}{Tampa, FL}
       \resumeItemListStart
-        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
-        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
-        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+        \resumeItem{Assigned to lead data engineering efforts for the Command Chief Digital and Artificial Intelligence Office (CDAO) of the United States Special Operations Command (USSOCOM).}
+        \resumeItem{Developed a pipeline to load raw flight data into Databricks, perform data cleanup and text mining, and transform data into structured tables in the cloud; effectively automating over one month of manual work and expensive computing cluster usage to less than two days, requiring no human intervention.}
+        \resumeItem{Implemented the use of \LaTeX{} for technical documentation in the CDAO, including the creation of an official USSOCOM template; thereby enhancing the ability of data scientists to clearly communicate formulas, algorithms, and processes to stakeholders.}
+        \resumeItem{Created a local Spark environment that could be easily replicated by other team members; enhancing the speed of software development by allowing for proper Python unit testing and debugging without the need to log into Databricks; allowing the use of an IDE/editor (e.g., VS Code) versus utilizing notebook cells to write thousands of lines of code.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -155,64 +136,57 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Information Technology Support Specialist}{Sep. 2018 -- Present}
-      {Southwestern University}{Georgetown, TX}
+      {Data Engineer, TV Analytics}{March 2017 -- April 2019}
+      {The Nielsen Company}{Oldsmar, FL}
       \resumeItemListStart
-        \resumeItem{Communicate with managers to set up campus computers used on campus}
-        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
-        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+        \resumeItem{Developed pipelines for migrating data from legacy systems (flat files, mainframe, traditional databases) into cloud environments (Databricks, Hadoop, Hive on AWS).}
+        \resumeItem{Improved the QA process for Data Science teams from 15 days to less than 2 hours by developing a Python package that leveraged existing Spark engine and Hive data warehouse to automatically scan new data for any issues.}
+        \resumeItem{Partnered with directors and other Data Science teams to create a PostgreSQL database and to determine what data required ongoing access; thereby writing Python scripts to automatically abstract data from the mainframe and UNIX servers and to transform into a structured format within less than 15-minutes verses taking 2 or more days.}
     \resumeItemListEnd
 
     \resumeSubheading
-      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-      {Southwestern University}{Georgetown, TX}
+      {Research Analyst, Mobile Measurement}{March 2015 -- March 2017}
+      {The Nielsen Company}{Oldsmar, FL}
       \resumeItemListStart
-        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-        \resumeItem{Developed a game in Java to test the generated dungeons}
-        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+        \resumeItem{Created a Python script that read Excel documents and performed all business requirements and summarized any deficiencies, resulting in a simple, accurate script execution that took less than a minute versus 16 hours.}
+        \resumeItem{Developed a multi-language script utilizing Python to read Excel sheets and to discern which records required further research, formatted summaries, and SPSS code for investigative purposes, concluding in the ability to generate Excel reports for trend breaks in less than a minute with no manual activities by analysts.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Bilingual Survey Writer}{March 2014 -- March 2015}
+      {The Nielsen Company}{Oldsmar, FL}
+      \resumeItemListStart
+        \resumeItem{Created surveys, both in English and Spanish, that measured audience engagement in TV programming and the effectiveness of product placements.}
+        \resumeItem{Designed and implemented a web-based PHP application that used MySQL database to store survey data, which allowed writers to retrieve answer choices from past surveys within seconds.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of South Florida}{Tampa, FL}
+      {Bachelor of Arts in Statistics, minor in Technical Writing}{2014}
+  \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
-          \resumeItemListStart
-            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
-            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
-            \resumeItem{Visualized GitHub data to show collaboration}
-            \resumeItem{Used Celery and Redis for asynchronous tasks}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
-          \resumeItemListStart
-            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
-            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
-            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
-            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     \textbf{Relational Databases}{: MySQL/MariaDB, PostgreSQL, Oracle, Microsoft SQL Server} \\
+     \textbf{Big Data}{: Spark, HiveSQL, Databricks, Amazon AWS (S3, EC2), Hadoop} \\
+     \textbf{Visualization}{: Tableau, Spotfire} \\
+     \textbf{Programming/Scripting}{: Python (object-oriented, procedural), Bash, R, SAS, SPSS, PHP}
     }}
  \end{itemize}
 
+\section{Military/Federal}
+\begin{itemize}[leftmargin=0.15in, label={}]
+   \small{\item{
+    \textbf{US Army Reserve \& Florida Army National Guard}{: Served as a combat medic during Operation Iraqi Freedom.} \\
+    \textbf{Security Clearance}{: TS/SCI (Active)} \\
+   }}
+\end{itemize}
 
-%-------------------------------------------
+
 \end{document}
