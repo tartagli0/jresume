@@ -87,7 +87,8 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{%
+  \resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -105,9 +106,11 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Abraham Vargas} \\ \vspace{1pt}
-    \small 813-358-3092 $|$ \href{mailto:abevargas1@outlook.com}{\underline{abevargas1@outlook.com}} $|$ 
-    \href{https://linkedin.com/in/abevargas1}{\underline{linkedin.com/in/abevargas1}}
+  \textbf{\Huge \scshape Abraham Vargas} \\ \vspace{1pt}
+  \small 813-358-3092 $|$
+  \href{mailto:abevargas1@outlook.com}{\underline{abevargas1@outlook.com}} $|$ 
+  \href{https://linkedin.com/in/abevargas1}{%
+    \underline{linkedin.com/in/abevargas1}}
 \end{center}
 
 
@@ -119,10 +122,28 @@
       {Senior Data Engineer, USSOCOM CDAO}{March 2020 -- Present}
       {Iron EagleX, Inc.}{Tampa, FL}
       \resumeItemListStart
-        \resumeItem{Assigned to lead data engineering efforts for the Command Chief Digital and Artificial Intelligence Office (CDAO) of the United States Special Operations Command (USSOCOM).}
-        \resumeItem{Developed a pipeline to load raw flight data into Databricks, perform data cleanup and text mining, and transform data into structured tables in the cloud; effectively automating over one month of manual work and expensive computing cluster usage to less than two days, requiring no human intervention.}
-        \resumeItem{Implemented the use of \LaTeX{} for technical documentation in the CDAO, including the creation of an official USSOCOM template; thereby enhancing the ability of data scientists to clearly communicate formulas, algorithms, and processes to stakeholders.}
-        \resumeItem{Created a local Spark environment that could be easily replicated by other team members; enhancing the speed of software development by allowing for proper Python unit testing and debugging without the need to log into Databricks; allowing the use of an IDE/editor (e.g., VS Code) versus utilizing notebook cells to write thousands of lines of code.}
+        \resumeItem{%
+          Assigned to lead data engineering efforts for the Command Chief
+          Digital and Artificial Intelligence Office (CDAO) of the United States
+          Special Operations Command (USSOCOM).}
+        \resumeItem{%
+          Developed a pipeline to load raw flight data into Databricks, perform
+          data cleanup and text mining, and transform data into structured
+          tables in the cloud; effectively automating over one month of manual
+          work and expensive computing cluster usage to less than two days,
+          requiring no human intervention.}
+        \resumeItem{%
+          Implemented the use of \LaTeX{} for technical documentation in the
+          CDAO, including the creation of an official USSOCOM template; thereby
+          enhancing the ability of data scientists to clearly communicate
+          formulas, algorithms, and processes to stakeholders.}
+        \resumeItem{%
+          Created a local Spark environment that could be easily replicated by
+          other team members; enhancing the speed of software development by
+          allowing for proper Python unit testing and debugging without the need
+          to log into Databricks; allowing the use of an IDE/editor
+          (e.g., VS Code) versus utilizing notebook cells to write thousands of
+          lines of code.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -139,25 +160,52 @@
       {Data Engineer, TV Analytics}{March 2017 -- April 2019}
       {The Nielsen Company}{Oldsmar, FL}
       \resumeItemListStart
-        \resumeItem{Developed pipelines for migrating data from legacy systems (flat files, mainframe, traditional databases) into cloud environments (Databricks, Hadoop, Hive on AWS).}
-        \resumeItem{Improved the QA process for Data Science teams from 15 days to less than 2 hours by developing a Python package that leveraged existing Spark engine and Hive data warehouse to automatically scan new data for any issues.}
-        \resumeItem{Partnered with directors and other Data Science teams to create a PostgreSQL database and to determine what data required ongoing access; thereby writing Python scripts to automatically abstract data from the mainframe and UNIX servers and to transform into a structured format within less than 15-minutes verses taking 2 or more days.}
+        \resumeItem{%
+          Developed pipelines for migrating data from legacy systems
+          (flat files, mainframe, traditional databases) into cloud environments
+          (Databricks, Hadoop, Hive on AWS).}
+        \resumeItem{%
+          Improved the QA process for Data Science teams from 15 days to less
+          than 2 hours by developing a Python package that leveraged existing
+          Spark engine and Hive data warehouse to automatically scan new data
+          for any issues.}
+        \resumeItem{%
+          Partnered with directors and other Data Science teams to create a
+          PostgreSQL database and to determine what data required ongoing
+          access; thereby writing Python scripts to automatically abstract data
+          from the mainframe and UNIX servers and to transform into a structured
+          format within less than 15-minutes verses taking 2 or more days.}
     \resumeItemListEnd
 
     \resumeSubheading
       {Research Analyst, Mobile Measurement}{March 2015 -- March 2017}
       {The Nielsen Company}{Oldsmar, FL}
       \resumeItemListStart
-        \resumeItem{Created a Python script that read Excel documents and performed all business requirements and summarized any deficiencies, resulting in a simple, accurate script execution that took less than a minute versus 16 hours.}
-        \resumeItem{Developed a multi-language script utilizing Python to read Excel sheets and to discern which records required further research, formatted summaries, and SPSS code for investigative purposes, concluding in the ability to generate Excel reports for trend breaks in less than a minute with no manual activities by analysts.}
+        \resumeItem{%
+          Created a Python script that read Excel documents and performed all
+          business requirements and summarized any deficiencies, resulting in a
+          simple, accurate script execution that took less than a minute versus
+          16 hours.}
+        \resumeItem{%
+          Developed a multi-language script utilizing Python to read Excel
+          sheets and to discern which records required further research,
+          formatted summaries, and SPSS code for investigative purposes,
+          concluding in the ability to generate Excel reports for trend breaks
+          in less than a minute with no manual activities by analysts.}
       \resumeItemListEnd
 
       \resumeSubheading
       {Bilingual Survey Writer}{March 2014 -- March 2015}
       {The Nielsen Company}{Oldsmar, FL}
       \resumeItemListStart
-        \resumeItem{Created surveys, both in English and Spanish, that measured audience engagement in TV programming and the effectiveness of product placements.}
-        \resumeItem{Designed and implemented a web-based PHP application that used MySQL database to store survey data, which allowed writers to retrieve answer choices from past surveys within seconds.}
+        \resumeItem{%
+          Created surveys, both in English and Spanish, that measured audience
+          engagement in TV programming and the effectiveness of product
+          placements.}
+        \resumeItem{%
+          Designed and implemented a web-based PHP application that used MySQL
+          database to store survey data, which allowed writers to retrieve
+          answer choices from past surveys within seconds.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -173,17 +221,21 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Relational Databases}{: MySQL/MariaDB, PostgreSQL, Oracle, Microsoft SQL Server} \\
-     \textbf{Big Data}{: Spark, HiveSQL, Databricks, Amazon AWS (S3, EC2), Hadoop} \\
+     \textbf{Relational Databases}{: %
+        MySQL/MariaDB, PostgreSQL, Oracle, Microsoft SQL Server} \\
+     \textbf{Big Data}{: %
+        Spark, HiveSQL, Databricks, Amazon AWS (S3, EC2), Hadoop} \\
      \textbf{Visualization}{: Tableau, Spotfire} \\
-     \textbf{Programming/Scripting}{: Python (object-oriented, procedural), Bash, R, SAS, SPSS, PHP}
+     \textbf{Programming/Scripting}{: %
+        Python (object-oriented, procedural), Bash, R, SAS, SPSS, PHP}
     }}
  \end{itemize}
 
 \section{Military/Federal}
 \begin{itemize}[leftmargin=0.15in, label={}]
    \small{\item{
-    \textbf{US Army Reserve \& Florida Army National Guard}{: Served as a combat medic during Operation Iraqi Freedom.} \\
+    \textbf{US Army Reserve \& Florida Army National Guard}{: %
+      Served as a combat medic during Operation Iraqi Freedom.} \\
     \textbf{Security Clearance}{: TS/SCI (Active)} \\
    }}
 \end{itemize}
