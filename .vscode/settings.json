@@ -6,5 +6,7 @@
         "Spotfire",
         "SPSS",
         "USSOCOM"
-    ]
+    ],
+    "editor.tabSize": 2,
+    "editor.rulers": [80]
 }
